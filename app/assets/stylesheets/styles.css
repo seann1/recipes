@@ -1,0 +1,43 @@
+
+
+#box {
+  background-color: #DBDBDB;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  border-width:1px;
+  border-style: solid;
+  border-color: black;
+  margin:0 auto;
+
+}
+
+#box-white {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  border-width:1px;
+  border-style: solid;
+  border-color: black;
+  margin:0 auto;
+
+}
+
+.title {
+  text-align: center;
+}
+
+#box p {
+  color: black;
+  font-size: 2em;
+}
+
+
+
