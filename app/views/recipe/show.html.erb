@@ -1,11 +1,12 @@
 <div class="container">
   <br />
-<div id="box"><a href="/">Home</a></div>
 
-<p><b><%= @recipe.name %></b></p>
+  <div id="box-white">
 
-<p><%= @recipe.rating %> star</p>
-<p><%= @recipe.instructions %></p>
+<h1><%= @recipe.name %>
+<%= @recipe.rating %> star
+<%= @recipe.instructions %></h1></div>
+
 <a href="/recipe/<%= @recipe.id %>/edit">Edit</a>
 <a href="/recipe/<%= @recipe.id %>/destroy"
       data-confirm="You sure?"
@@ -20,5 +21,6 @@
   <li><%= tag.name %></li>
   <% end %>
 </ul>
+<div id="box"><a href="/">Home</a></div>
 
 </div>
