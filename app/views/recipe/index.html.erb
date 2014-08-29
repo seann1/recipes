@@ -1,13 +1,15 @@
-<h1>Recipe Program</h1>
+<div class="container">
+
+<h1 class='title'>Recipe Program</h1>
 
 <% @recipes.each do |recipe| %>
-  <a href="/recipe/<%= recipe.id %>/show"><%= recipe.name %></a><br />
+  <div id="box"> <a href="/recipe/<%= recipe.id %>/show"><%= recipe.name %></a></div><br />
 <% end %>
 <br />
 
-<%= link_to('Add a Recipe', {:controller => 'recipe', :action => 'new'}) %>
+<div id="box-white"><%= link_to('Add a Recipe', {:controller => 'recipe', :action => 'new'}) %></p></div>
 
 
-
+</div>
 
 

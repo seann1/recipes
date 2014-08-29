@@ -1,8 +1,11 @@
+<div class="container">
+  <br />
+<div id="box"><a href="/">Home</a></div>
+
 <p><b><%= @recipe.name %></b></p>
+
 <p><%= @recipe.rating %> star</p>
 <p><%= @recipe.instructions %></p>
-
-<a href="/">Home</a>
 <a href="/recipe/<%= @recipe.id %>/edit">Edit</a>
 <a href="/recipe/<%= @recipe.id %>/destroy"
       data-confirm="You sure?"
@@ -12,40 +15,10 @@
 
 <p><a href="/recipe/<%= @recipe.id %>/tag/new">Add Tag</a></p>
 
+<ul>
 <% @recipe.tags.each do |tag| %>
-  <%= tag.name %>
+  <li><%= tag.name %></li>
   <% end %>
+</ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
