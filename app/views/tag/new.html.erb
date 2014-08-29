@@ -1,0 +1,27 @@
+<h1>CHOOSE A TAG TO ADD OR MAKE A NEW ONE</h1>
+  <table>
+    <thead>
+      <tr>
+  <th>Tags<th>
+    <tr>
+    </thead>
+    <tbody>
+
+<% @tags.each do |tag| %>
+  <tr><td><a href="<%= tag.id %>/success">#<%= tag.name %></a></td></tr>
+<% end %>
+</tbody>
+</table>
+</form>
+
+<br />
+
+<form action="/recipe/<%= @recipe.id %>/tag/" method="post">
+  <label class="control-label" for="name">Name</label>
+  <input class="form-control" id="name" name="name" type="text" value="<%= @tag.name %>">
+
+  <button class="btn btn-default" type="submit">+</button>
+  <br/>
+  <br/>
+
+<a href="/">Home</a>

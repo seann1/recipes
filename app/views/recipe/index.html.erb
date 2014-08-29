@@ -1,0 +1,13 @@
+<h1>Recipe Program</h1>
+
+<% @recipes.each do |recipe| %>
+  <a href="/recipe/<%= recipe.id %>/show"><%= recipe.name %></a><br />
+<% end %>
+<br />
+
+<%= link_to('Add a Recipe', {:controller => 'recipe', :action => 'new'}) %>
+
+
+
+
+

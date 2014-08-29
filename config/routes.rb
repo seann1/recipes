@@ -1,0 +1,15 @@
+Rails.application.routes.draw do
+  match('/', {:via => :get, :to => 'recipe#index'})
+  match('/recipe', {:via => :get, :to => 'recipe#index'})
+  match('/recipe/new', {:via => :get, :to => 'recipe#new'})
+  match('/recipe', {:via => :post, :to => 'recipe#create'})
+  match('/recipe/:recipe_id/show', {:via => :get, :to => 'recipe#show'})
+  match('/recipe/:recipe_id/edit', {:via => :get, :to => 'recipe#edit'})
+  match('/recipe/:recipe_id/show', {:via => [:put, :patch], :to => 'recipe#update'})
+  match('/recipe/:recipe_id/destroy', {:via => :delete, :to => 'recipe#destroy'})
+  match('/recipe/:recipe_id/tag', {:via => :get, :to => 'tag#index'})
+  match('/recipe/:recipe_id/tag/new', {:via => :get, :to => 'tag#new'})
+  match('/recipe/:recipe_id/tag', {:via => :post, :to => 'tag#create'})
+  match('/recipe/:recipe_id/tag/:tag_id/success', {:via => :get, :to => 'hash_join#create'})
+  match('/recipe/:recipe_id/tag/:tag_id/show', {:via => :get, :to => 'tag#show'})
+end

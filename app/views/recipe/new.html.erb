@@ -1,0 +1,22 @@
+<h1>Add a new recipe:</h1>
+
+
+<form action="/recipe/" method="post">
+  <label class="control-label" for="name">Name</label>
+  <input class="form-control" id="name" name="name" type="text" value="<%= @recipe.name %>">
+
+  <label class="control-label" for="instructions">Instructions</label>
+  <input class="form-control" id="instructions" name="instructions" type="text" value="<%= @recipe.instructions %>">
+
+  <label class="control-label" for="rating">Rating 1-5</label>
+  <input class="form-control" id="rating" name="rating" type="text" value="<%= @recipe.rating %>">
+
+  <label class="control-label" for="contributor_id">Contributor ID</label>
+  <input class="form-control" id="contributor_id" name="contributor_id" type="text" value="<%= @recipe.contributor_id %>">
+
+  <button class="btn btn-default">+</button>
+</form>
+
+<br />
+
+<a href="/">Home</a>
